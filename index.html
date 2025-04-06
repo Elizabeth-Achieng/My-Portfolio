@@ -1,15 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PORTFOLIO</title>
+    <title>MY PORTFOLIO</title>
     <link rel="stylesheet"href= "style.css">
 </head>
 <body>
-    <div id="header">
-        
+    <nav>
+        <div class="logo">E <span class="heading">A</span></div>
+        <ul>
+            <li>About</li>
+            <li>Education</li>
+            <li>Experience</li>
+            <li>Contact</li>
+            <li class="heading" style="">
+                
+                <a class="heading" href="./Elizabeth-Achieng-CV.pdf" download>Download CV</a>
+
+            </li>
+        </ul>
+    </nav>
+<section class="hero page-section">
+    <div>
+        <h3 class="heading">Hi, </h3>
+        <h3>I am Elizabeth Achieng</h3>
+        <p>Dedicated IT Support Officer with over one year of experience </p>
+        <p>providing technical assistance and IT support to users.</p> 
+        <p>Skilled in troubleshooting hardware and software issues,</p>
+        <p>network administration, and IT security. Strong commitment to customer service,</p> 
+        <p>staff training, and efficient IT operations.</p>
     </div>
+
+    <div>
+        <img src="./hero.png" alt="hero image">
+    </div>
+</section>
+
+<section class="page-section">
+    <h3 class="heading">Education</h3>
+
+    <p>Went to Kabete National Polytechnic</p>
+    <p>Pursued Diploma In Information Communication Technology</p>
+
+
+</section>
+    
+
+    
+    <section class="page-section">
+        <h1 class="heading">Professional Experience</h1>
+        <article style="margin-top: 20px;">
+            <h3 class="heading">ICT Support Intern</h6>
+<p>Ministry of Youth Affairs and Creative Economy </p>
+    Jan 2024 – May 2024 | Nairobi, Kenya
+<li>	Delivered technical support, diagnosing and resolving hardware, software, and network issues.</li>
+<li>	Implemented IT security measures, safeguarding data integrity and system access.</li>
+<li>	Designed and led staff training sessions, enhancing digital literacy and system efficiency.</li>
+<li>	Optimized IT asset management, ensuring accurate inventory tracking.</li>
+<li>	Maintained and repaired hardware components, reducing downtime and operational disruptions.</li>
+<li>	Administered network infrastructure, troubleshooting connectivity issues for seamless operations.</li>
+
+
+
+        </article>
+
+        <article style="margin-top: 20px">
+            <h3 class="heading">ICT Support Intern</h3>
+Moi Teaching and Referral Hospital (MTRH)
+<p>Jan 2023 – May 2023 | Eldoret, Kenya</p>
+<li>	Ensured compliance with IT security protocols, mitigating data vulnerabilities.</li>
+<li>	Provided help desk support, addressing technical concerns and improving user experience.</li>
+<li>	Conducted IT training workshops, equipping staff with essential digital skills.</li>
+<li>	Managed IT inventory and asset tracking, optimizing resource allocation.</li>
+<li>	Maintained network systems, ensuring secure and uninterrupted connectivity</li>
+
+        </article>
+    </section>
+
+    
+
+    <h3  class="heading">Skills</h3>
+
+
+    <div>
+    <ul style="display: flex; justify-content: space-between; list-style-type: none; margin: 20px 0 20px 0;">
+        <li style="font-weight: 700; font-size: 1.4rem;">HTML5</li>
+        <li style="font-weight: 700; font-size: 1.4rem;">CSS3</li>
+        <li style="font-weight: 700; font-size: 1.4rem;">Javascript</li>
+        <li style="font-weight: 700; font-size: 1.4rem;">Python</li>
+    </ul>
+</div>
+<section class="page-section" style="display: flex; justify-content: space-between; align-items: center;">
+    
+    <form class="contact">
+        <h2 class="heading">Contact Me</h2>
+        <div>
+            <label for="firstname">Firstname</label>
+            <input type="text" placeholder="Enter Firstname">
+        </div>
+
+        <div>
+            <label for="lastname">Lastname</label>
+            <input type="text" placeholder="Enter Lastname">
+        </div>
+
+        <div>
+            <label for="email">Email</label>
+            <input type="email" placeholder="Enter Email">
+        </div>
+
+        <div>
+            <label for="message">Message</label>
+            <input type="text" placeholder="Your Message">
+        </div>
+        <button>
+            <p class="button">Send</p>
+        </button>
+    </form>
+    <div>
+        <img src="./contact.png" alt="">
+    </div>
+</section>
+
+    <footer>
+        <p style="">All rights reserved <span id="year" class="heading"></span></p>
+    </footer>
+
+    <script>
+        const year = document.getElementById("year");
+        year.innerText = new Date().getFullYear()
+    </script>
     
 </body>
 </html>
